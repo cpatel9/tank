@@ -10,5 +10,25 @@
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
+
+    <table border="1">
+        <tr>
+            <th>Fname</th>
+            <th>Cell</th>
+            <th>Email</th>
+            <th>Gender</th>
+       	 <th>Empno</th>
+        </tr>
+        <c:forEach items="${contacts}" var="contacts">
+            <tr>
+                <td>${contacts.fname}</td>
+                <td>${contacts.cell}</td>
+                <td>${contacts.email}</td>
+                <td>${contacts.gender}</td>
+                <td>${contacts.empno}</td>
+            </tr>
+        </c:forEach>
+    </table>
+
 </body>
 </html>

@@ -29,12 +29,11 @@
 		<beans:property name="url" value="jdbc:sqlite:C:/Users/chitranjan_patel/Documents/WORKSPACE-sts-3.7.1.RELEASE/PLDSTIER3.db" />
 	</beans:bean>
 	
-	<!--  Data source setting in the Service
-	  <beans:bean id="contactservice" class="com.avaya.plds.service.ContactServiceImpl">
-     	 <beans:property name="servicedataSource" ref="dataSource"/>
-  	 </beans:bean>
-  	 -->
- 
-  	
+	<!--  Data source setting in the Service  	 -->
 	
+	  <beans:bean id="contactdao" class="com.avaya.plds.dao.ContactDAOImpl">
+     	 <beans:property name="dataSource" ref="dataSource"/>
+  	 </beans:bean>
+
+ 
 </beans:beans>

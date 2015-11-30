@@ -37,7 +37,7 @@ public class HomeController {
 		
 		String formattedDate = dateFormat.format(date);		
 		model.addAttribute("serverTime", formattedDate );
-		contactService.getContact();
+		model.addAttribute("contacts",contactService.getContact());
 		
 		return "home";
 	}
