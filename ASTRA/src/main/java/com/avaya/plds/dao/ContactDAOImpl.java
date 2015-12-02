@@ -13,8 +13,8 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.springframework.stereotype.Repository;
 
+import com.avaya.plds.constants.SQL_CONSTANTS;
 import com.avaya.plds.model.ContactVO;
-
 
 
 @Repository
@@ -34,7 +34,8 @@ public class ContactDAOImpl implements ContactDAO {
 			return dataSource.getConnection();
 		
 	}
-	
+
+	@Override
 	public List getContact(){
 		
 		System.out.println("inside ContactDAO.getContact()");
@@ -43,7 +44,7 @@ public class ContactDAOImpl implements ContactDAO {
 		try {
 			con = dataSource.getConnection();
 			Statement st = con.createStatement();
-			ResultSet rs = st.executeQuery("select FIRSTNAME,CELL,EMAIL,GENDER,EMPNO from CONTACT");
+			ResultSet rs = st.executeQuery(SQL_CONSTANTS.SELECT_CONTACT);
 			
 			JSONArray jsonArray = new JSONArray();
 		      while(rs.next())
@@ -81,5 +82,37 @@ public class ContactDAOImpl implements ContactDAO {
 		}
 		return contacts;
 	}
+
+	/***
+	 * To Save Contact
+	 */
+	@Override
+	public int saveContact(ContactVO contactvo) {		
+		System.out.println("Inside DAO saveContact ");	
+		
+		try {
+			con = dataSource.getConnection();
+			Statement st = con.createStatement();
+			String query= "";
+			int recordUpdated = st.executeUpdate("");			
+			
+					
+		} catch (SQLException e) {
+			System.out.println("Exception occured while doing Db operation");
+			e.printStackTrace();
+		}
+		finally{
+			try {
+				if(null!=con)
+				   con.close();
+			} catch (SQLException e) {				
+				e.printStackTrace();
+			}
+		}
+	
+		return 0;
+	}
+	
+	
 	
 }

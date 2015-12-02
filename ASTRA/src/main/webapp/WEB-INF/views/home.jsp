@@ -21,6 +21,7 @@
         </tr>
         <c:forEach items="${contacts}" var="contacts">
             <tr>
+            	<td>${contacts.empno}+".jpg"</td>
                 <td>${contacts.fname}</td>
                 <td>${contacts.cell}</td>
                 <td>${contacts.email}</td>

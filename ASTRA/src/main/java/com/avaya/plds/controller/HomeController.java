@@ -42,4 +42,12 @@ public class HomeController {
 		return "home";
 	}
 	
+	@RequestMapping(value = "/addcontact", method = RequestMethod.GET)
+	public String addcontact(Locale locale, Model model) {
+		logger.info("Success");		
+				
+		
+		return "contact";
+	}
+	
 }

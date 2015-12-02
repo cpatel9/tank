@@ -1,5 +1,6 @@
 package com.avaya.plds.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.avaya.plds.model.ContactVO;
+import com.avaya.plds.service.ContactService;
  /***
   * This class is for adding contacts in the plds roaster database
   * @author Chitranjan_Patel
@@ -17,6 +19,11 @@ import com.avaya.plds.model.ContactVO;
 @Controller
 @SessionAttributes
 public class ContactController {
+	
+	@Autowired
+	ContactService contactService;
+	
+	
  /***
   * 
   * @param contact
@@ -28,6 +35,8 @@ public class ContactController {
                             ContactVO contact, BindingResult result) {
          
         System.out.println("First Name:" + contact.getFname());
+        System.out.println(" Gender:"+ contact.getGender());
+        
          
         return "redirect:/";
     }
