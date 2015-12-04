@@ -1,0 +1,34 @@
+
+
+									<button id="closeDrawer"
+										class="btn large red searchBarButton" style="float: right" ng-click="closechildren()">Close</button>
+
+									<div style="clear: both;"></div>
+
+									<div style="width: 100%;">
+
+
+
+
+										<div style="margin-top: 10px; display: block;"
+											id="ebAdminTools">
+
+											<div style="font-size: 20px;">{{navs.childnavs['parentlink']}}</div>
+
+											<ul style="display: block;">
+
+												<li ng-repeat="children in navs.childnavs['childlinks']">
+												<a href="{{children['url']}}" class="push" target="{{children['target']}}"
+													>{{children['name']}}</a>
+													
+												</li>
+
+												
+
+											</ul>
+
+										</div>
+
+									</div>
+
+								

@@ -1,0 +1,282 @@
+
+					<header class="fixedheader" id="uniqName_3_0"
+						widgetid="uniqName_3_0" style="display: block;">
+						<div class="container" style="overflow: none !important;">
+							<div style="float: left;" class="visible-sm visible-xs"
+								data-dojo-attach-point="burger">
+								<img src="resources/images/menu.png" style="cursor: pointer;">
+							</div>
+							<div style="float: left; width: 15px;"
+								class="visible-sm visible-xs">&nbsp;</div>
+							<div style="float: left;">
+								<svg class="icon-avaya" viewBox="0 0 88.8 25">
+							<g>
+								<polygon
+										points="85.2,18 88.8,18 79.8,0 77.3,0 68.4,18 72,18 73.3,15 81.5,15 80.5,13 74.4,13 78.6,3.9"></polygon>
+								<polygon
+										points="9,0 0,18 3.6,18 4.9,15 13.1,15 12.1,13 6.1,13 10.2,3.9 16.8,18 20.4,18 11.5,0"></polygon>
+								<polygon
+										points="43,0 34.1,18 37.7,18 39,15 47.2,15 46.2,13 40.1,13 44.3,3.9 50.9,18 54.5,18 45.5,0"></polygon>
+								<polygon
+										points="33.8,0 27.2,14.4 20.6,0 17,0 26,18 26.1,18 28.3,18 28.5,18 37.4,0"></polygon>
+	    		 	<polygon
+										points="68.2,0 61.4,14.7 55,0 51.4,0 59.6,18.2 56,25 59.5,25 71.8,0"></polygon>
+	    		 </g>
+	     	</svg>
+								<span
+									style="color: #ffffff; font-weight: bold; font-size: 18px; font-family: 'proxima-nova';">
+								</span>
+							</div>
+
+							<div style="float: right;" class="visible-md visible-lg">
+								<div
+									style="text-align: left; float: left; padding-right: 7px; margin-top: 10px;">
+									<span class="leftContent"
+										style="font-weight: bold; font-family: proxima-nova; font-size: 13px; color: rgb(255, 255, 255); letter-spacing: 0px; opacity: 1; text-align: left;"
+										data-dojo-attach-point="companyLabel">Company:</span> <span
+										class="leftContent"
+										style="padding-left: 2px; font-weight: bold; font-family: 'proxima-nova'; font-size: 13px; color: #ffffff; letter-spacing: 0; opacity: 1; text-align: left;"
+										data-dojo-attach-point="companyName">Avaya</span>
+								</div>
+								<div style="float: left; padding-right: 5px; padding-top: 4px;">
+									<svg class="icon-header-left" viewBox="0 0 48 48">
+		            <g>
+		            	<path
+											d="M6,34.5V42h7.5l22.1-22.1l-7.5-7.5C28.1,12.4,6,34.5,6,34.5z M41.4,14.1c0.8-0.8,0.8-2.1,0-2.8l-4.7-4.7 c-0.8-0.8-2-0.8-2.8,0l-3.7,3.7l7.5,7.5C37.8,17.7,41.4,14.1,41.4,14.1z"></path>
+		        	</g>
+		        </svg>
+								</div>
+								<!-- <div style="float: left; padding-right: 5px; padding-top: 4px;">
+	        <svg class="icon-header-left"  viewBox="0 0 48 48">
+	            <g>
+					<path d="M24,44c2.2,0,4-1.8,4-4h-8C20,42.2,21.8,44,24,44z M37,32V21c0-6.1-4.3-11.3-10-12.6V7c0-1.7-1.3-3-3-3s-3,1.3-3,3v1.4 C15.3,9.7,11,14.8,11,21v11l-4,4v2h34v-2L37,32z"/>						          
+				</g>
+	        </svg>
+	        </div> -->
+								<div style="float: left; margin-top: 10px; margin-left: 30px;">
+									<span
+										style="font-weight: bold; font-family: proxima-nova; font-size: 13px; color: rgb(255, 255, 255); text-align: left;"
+										id="userContext"> <span
+										id="labelWelcome">{{userInfo['firstName']}}</span>, <span
+										id="userNameHead">{{userInfo['lastName']}}</span> <!-- <a href="#" class="push" data-swat-route="/edituser" style="color:#FFFFFF !important; text-decoration: none; padding-left: 10px;"> My Profile</a> -->
+									</span> <a href="#/logout"
+										style="font-weight: bold; font-family: 'proxima-nova'; font-size: 13px; color: #ffffff; text-align: left; padding-left: 10px; background: none; text-decoration: none; display:none">
+										Logout</a>
+								</div>
+
+							</div>
+							<div style="clear: both;"></div>
+						</div>
+					</header>
+					<div id="uniqName_3_1" widgetid="uniqName_3_1"
+						style="display: block;">
+						<div class="visible-md visible-lg">
+							<div class="sidebar">
+							
+							
+								<div id="dashboard" class="item icon-contract-css" ng-class="{'active':sidebar=='Dashboard'}" ng-click="openchildren('Dashboard')">
+									<img src="resources/images/contracts.png"
+										class="icon-dashboard nav-icon">
+									<div style="width: 70px;">
+										<div class="title">Dashboard</div>
+										<div class="notify" style="display: none;">0</div>
+									</div>
+								</div>
+								
+								<div id="uploads" class="item icon-contract-css" ng-class="{'active':sidebar=='NPI/LC-Load Files'}" ng-click="openchildren('NPI/LC-Load Files')">
+									<img src="resources/images/contracts.png"
+										class="icon-dashboard nav-icon">
+									<div style="width: 70px;">
+										<div class="title">Uploads</div>
+										<div class="notify" style="display: none;">0</div>
+									</div>
+								</div>
+								
+								<div id="uploads" class="item icon-contract-css" ng-class="{'active':sidebar=='Person'}" ng-click="openchildren('Person')">
+									<img src="resources/images/contracts.png"
+										class="icon-dashboard nav-icon">
+									<div style="width: 70px;">
+										<div class="title">Person</div>
+										<div class="notify" style="display: none;">0</div>
+									</div>
+								</div>
+								
+								
+								<div id="dashboard1" class="item icon-dashboard-css" ng-click="openchildren('Shifts')" ng-class="{'active':sidebar=='Shifts'}">
+									<img src="resources/images/dashboard.png"
+										class="icon-dashboard nav-icon">
+									<div style="width: 70px;">
+										<div class="title">Shifts</div>
+										<div class="notify" style="display: none;">0</div>
+									</div>
+								</div>
+								<!-- ng-class="{'active':sidebar=='Install Based RE-Feed'}" 
+								ng-class="{'active':sidebar=='PLDS-Box'}"
+								ng-class="{'active':sidebar=='PLDS-Tier3-HelpFul-URLs'}"
+								ng-class="{'active':sidebar=='Avaya-Support'}"
+								ng-class="{'active':sidebar=='Care-Portal'}"
+								-->
+								
+								<div id="dashboard2" class="item icon-dashboard-css" ng-click="openchildren('TOOL STACK')" >
+									<img src="resources/images/catalog.png"
+										class="icon-dashboard nav-icon">
+									<div style="width: 70px;">
+										<div class="title">Tool Stack</div>
+										<div class="notify" style="display: none;">0</div>
+									</div>
+								</div>
+								
+								<div class="item icon-support-css" style="display: block;"  ng-click="openchildren('PLDS-Box')">
+									<img src="resources/images/help.png"
+										class="icon-dashboard nav-icon">
+									<div style="width: 70px;">
+										<div class="title">PLDS Box</div>
+										<div class="notify" style="display: none;">0</div>
+									</div>
+								</div>
+								
+								<div class="item icon-support-css" style="display: block;"  ng-click="openchildren('PLDS-Tier3-HelpFul-URLs')">
+									<img src="resources/images/help.png"
+										class="icon-dashboard nav-icon">
+									<div style="width: 70px;">
+										<div class="title">PLDS Help</div>
+										<div class="notify" style="display: none;">0</div>
+									</div>
+								</div>
+								
+								<div class="item icon-support-css" ng-click="openchildren('Avaya-Support')" >
+									<img src="resources/images/help.png"
+										class="icon-dashboard nav-icon">
+									<div style="width: 70px;">
+										<div class="title">Support</div>
+										<div class="notify" style="display: none;">0</div>
+									</div>
+								</div>
+								
+								
+								<div id="dashboard5" class="item icon-dashboard-css" ng-click="openchildren('SHARE SITE')" >
+									<img src="resources/images/catalog.png"
+										class="icon-dashboard nav-icon">
+									<div style="width: 70px;">
+										<div class="title">Share Site</div>
+										<div class="notify" style="display: none;">0</div>
+									</div>
+								</div>
+								
+								<div class="item icon-support-css" ng-click="openchildren('Care-Portal')" >
+									<img src="resources/images/dashboard.png"
+										class="icon-dashboard nav-icon">
+									<div style="width: 70px;">
+										<div class="title">Care-Portal</div>
+										<div class="notify" style="display: none;">0</div>
+									</div>
+								</div>
+								
+								<div style="padding: 15px;" class="leftDrawer" left-child-bar ng-show="navs.childrendisplay" navs="navs" childnavs="childnavs"
+									id="adminDrawer"></div>
+
+				
+
+							</div>
+						</div>
+						<div class="nav_sidebar">
+
+							<!-- div data-dojo-attach-point="navDialogOverlay" class="responsive-menu-overlay">
+	</div -->
+							<div data-dojo-attach-point="navDialog"
+								style="background: #FFFFFF; position: fixed; bottom: 0; top: 0 !important; left: 0 !important; display: none; z-index: 999; padding: 30px; color: #333333;'">
+								<!-- <div
+									style="background-color: #c90000; float: left; height: auto; margin: -30px 30px -30px -30px !important; padding: -30px !important; position: absolute; width: 100%; color: #FFFFFF;">
+									<div
+										style="float: left; line-height: 32px; font-size: 18px; margin: 7px 10px 0 16px;">
+										Welcome,
+										<div style="float: right; padding-left: 10px;"
+											data-dojo-attach-point="userName">Ravi Chandra
+											Lethakula</div>
+									</div>
+									<div style="font-size: 16px; margin: 7px 10px 0 16px;">
+										<a href="http://earlyrenewals.avaya.com/csqt/logout"
+											style="font-weight: bold; font-family: 'proxima-nova'; font-size: 16px; color: #ffffff; text-align: left; padding-left: 1px; background: none; text-decoration: none;">
+											Logout</a>
+									</div>
+
+								</div> -->
+								<div style="clear: both;"></div>
+								<div data-dojo-attach-point="navContent">
+
+									<div style="padding: 80px 0 25px 0; cursor: pointer;">
+										<div style="float: left; line-height: 32px; font-size: 18px;">
+											<div data-dojo-attach-point="nav_dashboardLink"
+												class="image_dashboard" style="float: left; width: 134px;">
+												<div style="float: right">Dashboard</div>
+
+												<div class="notify" style="display: none;">0</div>
+											</div>
+											<div style="clear: both;"></div>
+										</div>
+									</div>
+									<div style="clear: both;"></div>
+									<div style="padding: 0 0 25px 0; cursor: pointer;">
+										<div
+											style="float: left; line-height: 32px; font-size: 18px; margin-top: 30px;">
+											<div data-dojo-attach-point="nav_quotesLink"
+												class="image_quotes" style="float: left; width: 102px;">
+												<div style="float: right">Quotes</div>
+												<div class="notify" style="display: none;">0</div>
+											</div>
+											<div style="clear: both;"></div>
+										</div>
+									</div>
+									<div style="clear: both;"></div>
+									<div style="padding: 0 0 25px 0; cursor: pointer;">
+										<div
+											style="float: left; line-height: 32px; font-size: 18px; margin-top: 30px;">
+											<div data-dojo-attach-point="nav_contractsLink"
+												class="image_contracts active"
+												style="float: left; width: 120px;">
+												<div style="float: right">Contracts</div>
+												<div class="notify" style="display: none;">0</div>
+											</div>
+											<div style="clear: both;"></div>
+										</div>
+									</div>
+									<div style="clear: both;"></div>
+									<div style="padding: 0 0 25px 0; cursor: pointer;">
+										<div
+											style="float: left; line-height: 32px; font-size: 18px; margin-top: 30px;">
+											<div data-dojo-attach-point="nav_locationsLink"
+												class="image_locations" style="float: left; width: 120px;">
+												<div style="float: right">Locations</div>
+												<div class="notify" style="display: none;">0</div>
+											</div>
+											<div style="clear: both;"></div>
+										</div>
+									</div>
+									<div style="clear: both;"></div>
+									<div data-dojo-attach-point="nav_EBAdminLink"
+										style="display: none; padding: 0 0 25px 0; cursor: pointer;">
+										<img src="resources/images/admin@3x.png" style="float: left;">
+										<div
+											style="float: left; margin-left: 15px; line-height: 32px; font-size: 18px;">
+											<div class="title" data-dojo-attach-point="nav_labelSupport">Admin</div>
+											<div class="notify" style="display: none;">0</div>
+										</div>
+										<div style="clear: both;"></div>
+									</div>
+									<div style="clear: both;"></div>
+									<div style="padding: 0 0 25px 0; cursor: pointer;">
+										<div
+											style="float: left; line-height: 32px; font-size: 18px; margin-top: 30px;">
+											<div data-dojo-attach-point="nav_supportLink"
+												class="image_support" style="float: left; width: 105px;">
+												<div style="float: right">Support</div>
+												<div class="notify" style="display: none;">0</div>
+											</div>
+											<div style="clear: both;"></div>
+										</div>
+									</div>
+									<div style="clear: both;"></div>
+								</div>
+							</div>
+						</div>
+					</div>

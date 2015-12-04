@@ -1,0 +1,155 @@
+{
+	"NPI/LC-Load Files": {
+		"parentlink": {
+			"name": "NPI/LC-Load Files",
+			"url": "/file"
+		}
+	},
+	"TOOL STACK": {
+		"parentlink": "TOOL STACK",
+		"childlinks": [{
+			"name": "PLDS-SAP Report Generation",
+			"url": "http://dws01vmap01.nonprod.avaya.com:8090/PLDSInstallBase-Enhanced/",
+			"target": "_blank"
+		},
+		{
+			"name": "Entitlement-Load-File Creation",
+			"url": "http://dws01vmap01.nonprod.avaya.com:8090/PLDSTempLicense",
+			"target": "_blank"
+		}]
+	},
+	"SHARE SITE": {
+		"parentlink": "SHARE SITE",
+		"childlinks": [{
+			"name": "Home Page",
+			"url": "https://share.avaya.com/default.aspx",
+			"target": "_blank"
+		},
+		{
+			"name": "Qrtly Release Checkpoints",
+			"url": "https://projects.share.avaya.com/sites/PLDS/Qrtly%20Release%20Checkpoints/Forms/AllItems.aspx",
+			"target": "_blank"
+		},
+		{
+			"name": "Lifecycle Mtce Qtrly Releases",
+			"url": "https://projects.share.avaya.com/sites/PLDS/PLDS%20Maint%20Qtrly%20Releases/Forms/AllItems.aspx",
+			"target": "_blank"
+		},
+		{
+			"name": "NPI Quarterly Releases",
+			"url": "https://twpldvmap01.nonprod.avaya.com/poeticWeb/session/login.htm",
+			"target": "_blank"
+		}]
+	},
+	"Person": {
+		"parentlink": {
+			"name": "Person",
+			"url": "/person"
+		}
+	},
+	"Shifts": {
+		"parentlink": {
+			"name": "Shifts",
+			"url": "/shifts"
+		}
+	},
+	"Dashboard": {
+		"parentlink": {
+			"name": "Dashboard",
+			"url": "/dashboard"
+		}
+	},
+	"PLDS-SAP Report Generation": {
+		"parentlink": {
+			"name": "PLDS-SAP Report Generation",
+			"url": "/file"
+		}
+	},
+	"PLDS-Box": {
+		"parentlink": "PLDS-Box",
+		"childlinks": [{
+			"name": "PLDS SANDBOX",
+			"url": "http://pldsandbox.global.avaya.com/",
+			"target": "_blank"
+		},
+		{
+			"name": "PLDS PROD",
+			"url": "http://plds.avaya.com/",
+			"target": "_blank"
+		},
+		{
+			"name": "PLDS DEV",
+			"url": "https://dwpldvmap02.nonprod.avaya.com/poeticWeb/session/login.htm",
+			"target": "_blank"
+		},
+		{
+			"name": "PLDS TEST",
+			"url": "https://twpldvmap01.nonprod.avaya.com/poeticWeb/session/login.htm",
+			"target": "_blank"
+		},
+		{
+			"name": "PLDS STAGE",
+			"url": "https://sso1.avaya.com/CxpLogin.jsp?TYPE=100663297&REALMOID=06-68a29167-f972-1000-866d-80f0086d0055&GUID=0&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=NHJyfIPwt55x5PK0jobctrPRmEnbroToBZskmheeBQuq7FTz26q3t9Odl6hBqnRj&TARGET=-SM-https%3a%2f%2fpldtest%2eavaya%2ecom%2fpoeticWeb%2favayaLogin%2ejsp",
+			"target": "_blank"
+		}]
+	},
+	"PLDS-Tier3-HelpFul-URLs": {
+		"parentlink": "PLDS-Tier3-HelpFul-URLs",
+		"childlinks": [{
+			"name": "CXP",
+			"url": "https://sso.avaya.com/CxpLogin.jsp?TYPE=33554433&REALMOID=06-f0b4f95e-5732-1078-850f-80c3fa0cfd77&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=-SM-WfeZq7QcXwmAhYD8cA0M7S03kIP%2fQNEw9UP3iY%2fb7z3EE5q2edPZZcu68yvMV8Gp&TARGET=-SM-HTTPS%3a%2f%2fsso%2eavaya%2ecom%2fcxp%2fappmanager%2fptl%2fcxpWeb%3f_nfpb%3dtrue%26_pageLabel%3dUsers_Page",
+			"target": "_blank"
+		},
+		{
+			"name": "UCM",
+			"url": "https://sso.avaya.com/CxpLogin.jsp?TYPE=33554432&REALMOID=06-cf8e78ba-67ce-102b-98f0-80c43a82fd53&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=-SM-IpJInPO4%2fTz4LXIOdj99vgL%2bGjKzPaVwkvlhWShpWBva8Ux2e8WmFqZkGs9gs5Uc&TARGET=-SM-HTTPS%3a%2f%2fucm%2eavaya%2ecom%2fucm_enu%2fstart%2eswe%3fSWECmd%3dLogin%26SWEPL%3d1%26SWETS%3d",
+			"target": "_blank"
+		},
+		{
+			"name": "Middleware look up",
+			"url": "http://dws01vmap01.nonprod.avaya.com/MiddlewareLkp",
+			"target": "_blank"
+		},
+		{
+			"name": "RFA LOGIN",
+			"url": "http://rfa.avaya.com/",
+			"target": "_blank"
+		},
+		{
+			"name": "RFA ADMIN",
+			"url": "https://rfa.avaya.com/NASApp/support/RFASessionMgr?nextPage=RFAAdmin",
+			"target": "_blank"
+		}]
+	},
+	"Avaya-Support": {
+		"parentlink": "Avaya-Support",
+		"childlinks": [{
+			"name": "MFA - (APAC)",
+			"url": "https://ara-apac1.avaya.com/contractors",
+			"target": "_blank"
+		},
+		{
+			"name": "AVAYA Support",
+			"url": "https://Support.avaya.com",
+			"target": "_blank"
+		},
+		{
+			"name": "MFA GateWay(Avaya Contractors)",
+			"url": "https://support.avaya.com/helpcenter/getGenericDetails?detailId=C200931083415904017",
+			"target": "_blank"
+		}]
+	},
+	"Care-Portal": {
+		"parentlink": "Care-Portal",
+		"childlinks": [{
+			"name": "Care Portal",
+			"url": "http://careportal.us1.avaya.com/nccc/index.asp",
+			"target": "_blank"
+		},
+		{
+			"name": "Record Order Forms",
+			"url": "http://careportal.us1.avaya.com/nccc/record_order_form.asp",
+			"target": "_blank"
+		}]
+	}
+}

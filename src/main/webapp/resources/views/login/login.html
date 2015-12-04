@@ -1,0 +1,65 @@
+
+
+
+
+<div class="modal-body">
+<style type="text/css" scoped>
+input[type="text"],input[type="password"]{
+	background-color: ;
+  padding-left: 20px;
+  border-radius: 0;
+  border: none;
+  margin-bottom: 10px;
+  color: #333;
+  height: 43px;
+}
+.panel-heading p{
+	font-size:20px;
+}
+.logindiv{
+	margin-top:20px;
+	background:#efefef;
+	padding:10px;
+}
+.user{
+	font-size:100px;
+	border-radius:50%;
+	
+}
+.glyphicon-user{
+color:#EA99AB;
+}
+</style>
+	<form class="form-signin" ng-submit="loginUser()">
+		<div class="panel">
+			<!-- <div class="panel-heading">
+				<h3 class="text-center"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span>  Login</h3>
+			</div> -->
+			<div class="panel-body ">
+				<div class="col-md-8 col-md-offset-2 logindiv">
+					<div class="col-md-12">
+						<div class="text-center col-md-12">
+							<h1 class="user">
+								<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+							</h1>
+						</div>
+
+						<label for="inputEmail" class="sr-only">Email address</label> <input
+							type="text" id="inputEmail" class="form-control"
+							placeholder="Email address" required autofocus ng-model="user.loginname">  <label
+							for="inputPassword" class="sr-only">Password</label> <input
+							type="password" id="inputPassword" class="form-control"
+							placeholder="Password" required ng-model="user.password">
+						<div class="checkbox">
+							<label> <input type="checkbox" value="remember-me">
+								Remember me
+							</label>
+						</div>
+						<button class="btn btn-lg btn-warning btn-block" type="submit"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Sign
+							in</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
