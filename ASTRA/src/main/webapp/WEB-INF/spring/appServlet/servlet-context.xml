@@ -23,6 +23,7 @@
 	
 	<context:component-scan base-package="com.avaya.plds" />
 	
+	
 	  <beans:bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<beans:property name="driverClassName" value="org.sqlite.JDBC" />
@@ -33,6 +34,9 @@
 	
 	  <beans:bean id="contactdao" class="com.avaya.plds.dao.ContactDAOImpl">
      	 <beans:property name="dataSource" ref="dataSource"/>
+  	 </beans:bean>
+  	 
+  	 <beans:bean >
   	 </beans:bean>
 
  

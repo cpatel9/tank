@@ -36,7 +36,7 @@ public class ContactController {
          
         System.out.println("First Name:" + contact.getFname());
         System.out.println(" Gender:"+ contact.getGender());
-        
+        contactService.saveContact(contact);
          
         return "redirect:/";
     }

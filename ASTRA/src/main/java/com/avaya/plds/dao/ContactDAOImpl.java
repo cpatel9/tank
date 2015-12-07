@@ -84,7 +84,7 @@ public class ContactDAOImpl implements ContactDAO {
 	}
 
 	/***
-	 * To Save Contact
+	 * To Save Contact in database
 	 */
 	@Override
 	public int saveContact(ContactVO contactvo) {		
@@ -92,9 +92,17 @@ public class ContactDAOImpl implements ContactDAO {
 		
 		try {
 			con = dataSource.getConnection();
+			
 			Statement st = con.createStatement();
-			String query= "";
-			int recordUpdated = st.executeUpdate("");			
+			String query= "INSERT INTO CONTACT (FIRSTNAME, CELL, EMAIL, GENDER, EMPNO) values("+
+					"'"+contactvo.getFname()+"', "+
+					"'"+contactvo.getCell()+"', "+
+					"'"+contactvo.getEmail()+"', "+
+					"'"+contactvo.getGender()+"', "+
+						contactvo.getEmpno()+
+					")";
+			System.out.println("query::"+query);
+			int recordUpdated = st.executeUpdate(query);			
 			
 					
 		} catch (SQLException e) {
