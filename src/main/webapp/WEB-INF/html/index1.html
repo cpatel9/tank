@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en" ng-app="AngularSpringApp">
+<head>
+<meta charset="utf-8">
+<title>Project Manager</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Loading Bootstrap -->
+
+<!-- <link href="resources/bootstrap/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css"> -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"> -->
+<link href="resources/bootstrap/css/prettify.css" rel="stylesheet">
+<link rel="stylesheet" href="resources/css/ngDialog.css">
+<link rel="stylesheet" href="resources/css/ngDialog-theme-default.css">
+<link src="resources/css/ng-table.min.css" rel="stylesheet">
+
+<!-- Loading Flat UI -->
+<!-- <link href="resources/css/flat-ui.css" rel="stylesheet"> -->
+<!-- <link href="resources/css/docs.css" rel="stylesheet"> -->
+<link href="resources/css/sb-admin-2.css" rel="stylesheet">
+<!-- MetisMenu CSS -->
+<link href="resources/css/plugins/metisMenu/metisMenu.min.css"
+	rel="stylesheet">
+
+<link href="resources/font-awesome-4.1.0/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css">
+
+<link href="resources/css/nv.d3.min.css" rel="stylesheet">
+
+</head>
+<body>
+	<div id="wrapper">
+
+		<nav class="navbar navbar-default navbar-static-top" role="navigation"
+			style="margin-bottom: 0">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Project Manager</a>
+			</div>
+
+			<ul class="nav navbar-top-links navbar-right hide unique">
+			
+			  <li taskDrop class="dropdown"></li>
+
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#"> <i class="fa fa-user fa-fw"></i>
+						<i class="fa fa-caret-down"></i>
+				</a>
+					<ul class="dropdown-menu dropdown-user" >
+						<li><a href="#"><i class="fa fa-user fa-fw"></i> User
+								Profile</a></li>
+						<li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+						</li>
+						<li class="divider"></li>
+						<li><a href="#/logout" ><i class="fa fa-sign-out fa-fw"></i>
+								Logout</a></li>
+					</ul> <!-- /.dropdown-user --></li>
+					
+					
+			
+				<!-- /.dropdown -->
+			</ul>
+
+		</nav>
+		<div class="navbar-default sidebar hide unique" role="navigation">
+			<div class="sidebar-nav navbar-collapse">
+				<ul class="nav" id="side-menu">
+					<!--  <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group
+                        </li> -->
+					<li><a  href="#/dashboard"><i
+							class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
+
+					<li><a  href="#/file"><i
+							class="fa fa-edit fa-fw"></i> PLDS Extracts</a></li>
+					<li><a  href="#/tasks"><i
+							class="fa fa-edit fa-fw"></i> Task Manager</a></li>
+					<li><a  href="#/shifts"><i
+							class="fa fa-edit fa-fw"></i> Shift Information</a></li>
+							
+							
+				<!-- 	<li><a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>
+							Charts<span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="flot.html">Flot Charts</a></li>
+							<li><a href="morris.html">Morris.js Charts</a></li>
+						</ul> /.nav-second-level</li>
+					<li><a href="tables.html"><i class="fa fa-table fa-fw"></i>
+							Tables</a></li> -->
+
+				</ul>
+			</div>
+			<!-- /.sidebar-collapse -->
+		</div>
+
+		<!-- <ul class="demo-sidebar hide-on-tablets">
+			<li><a href="#/todo">Todo List</a></li>
+			<li><a href="#/address">Address Book</a></li>
+			<li><a href="#/table">Dynamic Table</a></li>
+			<li><a href="#/tabs">Dynamic Tabs</a></li>
+			<li><a href="#/file">File Upload</a></li>
+			<li><a href="#/editor">Ace Editor</a></li>
+			<li><a href="#/restangular">Restangular</a></li>
+			<li><a href="#/d3">D3 Chart</a></li>
+			<li><a href="#/force">Force.com</a></li>
+
+		</ul> -->
+
+
+
+		<!-- <h1 class="demo-headline"></h1> -->
+		
+			<div ng-view></div>
+		
+
+	</div>
+
+	<script src="resources/js/jquery-1.11.0.js"></script>
+	<script src="resources/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="resources/js/jquery.ui.touch-punch.min.js"></script>
+	<script src="resources/js/bootstrap.min.js"></script>
+	<script src="resources/js/bootstrap-select.js"></script>
+	<script src="resources/js/bootstrap-switch.js"></script>
+
+	<script src="resources/js/flatui-checkbox.js"></script>
+	<script src="resources/js/flatui-radio.js"></script>
+	<script src="resources/js/jquery.tagsinput.js"></script>
+	<script src="resources/js/jquery.placeholder.js"></script>
+	<script src="resources/js/typeahead.js"></script>
+	<script src="resources/bootstrap/js/google-code-prettify/prettify.js"></script>
+	<script src="resources/js/application.js"></script>
+	<script src="resources/js/lib/angular/angular-file-upload-shim.min.js"></script>
+	
+
+
+	<script src="resources/js/lib/angular/angular.min.js"></script>
+	<script src="resources/js/lib/angular/angular-route.min.js"></script>
+	<script src="resources/js/lib/angular/ui-bootstrap-tpls-0.11.0.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+	<script src="resources/js/lib/angular/ui-ace.min.js"></script>
+	<script src="resources/js/lib/angular/ng-table.min.js"></script>
+
+	<script src="resources/js/sb-admin-2.js"></script>
+
+	<script src="resources/js/lib/angular/angular-file-upload.min.js"></script>
+
+	<script src="resources/js/d3.min.js"></script>
+	<script src="resources/js/nv.d3.js"></script>
+	<script src="resources/js/lib/angular/angularjs-nvd3-directives.min.js"></script>
+
+	<script src="resources/js/app.js"></script>
+	<script src="resources/js/plugins/metisMenu/metisMenu.min.js"></script>
+	<script src="resources/js/services.js"></script>
+	<script src="resources/js/controllers/TodoController.js"></script>
+	<script src="resources/js/controllers/LoginController.js"></script>
+	<script src="resources/js/controllers/TimeSlotController.js"></script>
+	<script src="resources/js/controllers/AddressBookController.js"></script>
+	<script src="resources/js/controllers/TableController.js"></script>
+	<script src="resources/js/controllers/FileController.js"></script>
+	<script src="resources/js/controllers/EditorController.js"></script>
+	<script src="resources/js/controllers/RestController.js"></script>
+	<script src="resources/js/controllers/ForceController.js"></script>
+	<script src="resources/js/controllers/D3Controller.js"></script>
+	<script src="resources/js/controllers/TabsController.js"></script>
+	<script src="resources/js/controllers/TaskController.js"></script>
+	<script src="resources/js/filters.js"></script>
+	<script src="resources/js/directives.js"></script>
+	<script src="resources/js/ngDialog.js"></script>
+
+
+
+	<script src="resources/js/lib/angular/restangular.min.js"></script>
+</body>
+</html>

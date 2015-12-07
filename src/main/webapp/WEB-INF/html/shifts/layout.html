@@ -1,0 +1,102 @@
+<style type="text/css" scoped>
+.navbar {
+	margin-bottom: 0px !important;
+}
+
+.admin p {
+	padding-top: 30px;
+}
+
+input[type="text"], input[type="password"] {
+	background-color:;
+	padding-left: 20px;
+	border-radius: 0;
+	border: none;
+	margin-bottom: 10px;
+	color: #333;
+	height: 43px;
+}
+
+.panel-heading p {
+	font-size: 20px;
+}
+
+.logindiv {
+	margin-top: 20px;
+	background: #efefef;
+	padding: 10px;
+}
+
+.user {
+	font-size: 100px;
+	border-radius: 50%;
+}
+
+.glyphicon-user {
+	color: #EA99AB;
+}
+</style>
+<div id="page-wrapper">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">Shift Information</h1>
+		</div>
+		<!-- /.col-lg-12 -->
+	</div>
+
+	<div class="row">
+		<div class="col-md-8">
+			<!-- <input type="text" value="{{dt | date:'dd-MM-yyyy'}}"  ng-model='search.date' class="form-control"/> -->
+			<pre style="display:none">Selected date is: <em>{{search.date | date:'MM/dd/yyyy' }}</em>
+			</pre>
+
+
+
+
+			<table class="table table-hover custom-table">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Shift</th>
+						<th>Email</th>
+						<th>Contact</th>
+						<th>Date</th>
+					</tr>
+				</thead>
+				<tbody>
+
+					<!--  <tr ng-repeat="obj in info|filter:search|orderBy:'+shift'"> -->
+					<tr ng-repeat="obj in info|filter:search|orderBy:'+shift'">
+						<td>{{obj['name']}}</td>
+						<!--  <td
+							ng-class="{morning:'{{obj['shift']}}'=='First Shift',afternoon:obj['shift']=='Second Shift'},night:obj['shift']=='Night Shift',weekend:obj['shift']=='Week End Shift'}}">{{obj['shift']}}</td>
+						 -->
+						 <td
+							ng-class="{morning:'{{obj['shift']}}'=='First Shift',afternoon:'{{obj['shift']}}'=='Second Shift',night:'{{obj['shift']}}'=='Night Shift',weekend:'{{obj['shift']}}'=='Week End Shift'}">{{obj['shift']}}</td>
+						 <td>{{obj['email']}}</td>
+						<td>{{obj['contact']}}</td>
+						<!-- <td>{{dateParser(obj['date'])}}</td> -->
+						<td>{{obj['date']}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="col-md-4">
+			<datepicker ng-model="search.date"></datepicker>
+
+		</div>
+		
+		<div class="pull-left" style="clear:both;clear:both;width: 50%;padding-left: 2%;background-color: #E8E7E7;margin-left: 2%;">
+		
+		<div class=" times"><span class="boxes" style="background-color: rgb(227, 128, 229);"></span>&nbsp;&nbsp;First shift&nbsp;&nbsp;<span> 9 AM to 6 AM IST</span></div>
+		<div class=" times"><span class="boxes" style="background-color: rgb(0, 197, 255);"></span>&nbsp;&nbsp;Second shift&nbsp;&nbsp;<span> 2 PM AM to 11 PM IST</span></div>
+		<div class=" times"><span class="boxes" style="background-color: rgb(0, 23, 255);"></span>&nbsp;&nbsp;Night shift&nbsp;&nbsp;<span> 6 PM to 3 AM IST</span></div>
+		<div class=" times"><span class="boxes" style="  background-color: rgb(255, 0, 0);"></span>&nbsp;&nbsp;Weekend shift&nbsp;&nbsp;<span> 24 Hrs(On Call Support)</span></div>
+		
+		</div>
+	</div>
+</div>
+
+
+

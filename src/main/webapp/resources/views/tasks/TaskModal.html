@@ -1,0 +1,60 @@
+
+<div class="">
+	<form>
+		<div class="form-group">
+			<input type="hidden" ng-model="newTask.taskId"></input> <label>{{label.lTaskName}}</label>
+			<input class="form-control" ng-model="newTask.taskName">
+			<p class="help-block">Enter the task name.</p>
+		</div>
+		<div class="form-group">
+			<label>{{label.lTaskDesc}}</label>
+			<textarea class="form-control" rows="3" ng-model="newTask.taskDesc">
+											</textarea>
+		</div>
+		<div class="form-group">
+			<label>{{label.lAssignedTo}}</label> <select class="form-control"
+				ng-model='newTask.assignedTo'>
+				<option>select</option>
+				<option>Ramu</option>
+				<option>Bharath</option>
+				<option>Mahesh</option>
+				<option>Aditya</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label>{{label.lTaskStatus}}</label> 
+			
+			<input class="form-control" ng-model="newTask.taskStatus">
+		</div>
+		<div class="form-group">
+			<label>{{label.lTaskEffort}}</label> <input class="form-control"
+				ng-model="newTask.effort">
+		</div>
+		<div class="form-group">
+			<label>{{label.lComplexity}}</label>
+			<div class="radio">
+				<label> <input type="radio" ng-model="newTask.complexity"
+					name="optionsRadios1" id="optionsRadios1" value="Small">Small
+				</label>
+			</div>
+			<div class="radio">
+				<label> <input type="radio" ng-model="newTask.complexity"
+					name="optionsRadios2" id="optionsRadios2" value="Medium">Medium
+				</label>
+			</div>
+			<div class="radio">
+				<label> <input type="radio" ng-model="newTask.complexity"
+					name="optionsRadios3" id="optionsRadios3" value="Complex">Complex
+				</label>
+			</div>
+			<div class="radio">
+				<label> <input type="radio" ng-model="newTask.complexity"
+					name="optionsRadios4" id="optionsRadios4" value="Very Complex">
+					Very Complex
+				</label>
+			</div>
+		</div>
+		<input type="button" class="btn btn-primary" ng-click='addTask()' value="Save Task"></input> 
+	</form>
+</div>

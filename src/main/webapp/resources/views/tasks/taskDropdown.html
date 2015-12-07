@@ -1,0 +1,25 @@
+
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"> <i class="fa fa-tasks fa-fw"></i> <i
+	class="fa fa-caret-down"></i>
+</a>
+<ul class="dropdown-menu dropdown-tasks">
+	<li ng-repeat="task in tasks"><a href="#">
+			<div>
+				<p>
+					<strong>{{task.taskName}}</strong> <span
+						class="pull-right text-muted">{{task.taskStatus}}% Complete</span>
+				</p>
+				<div class="progress progress-striped active">
+					<div
+						ng-class="{'progress-bar-success':{{task.taskStatus>60}}, 'progress-bar-info':{{task.taskStatus>40 && task.taskStatus<60}},'progress-bar-warning':{{task.taskStatus>20 && task.taskStatus<40}},'progress-bar-danger':{{task.taskStatus<20}}}"
+						class="progress-bar" role="progressbar"
+						aria-valuenow="{{task.taskStatus}}" aria-valuemin="0"
+						aria-valuemax="100" style="width: {{task.taskStatus}}%">
+						<span class="sr-only">{{task.taskStatus}}% Complete
+							(success)</span>
+					</div>
+				</div>
+			</div>
+	</a></li>
+</ul>
+<!-- /.dropdown-tasks -->
