@@ -33,68 +33,7 @@ public class HomeController {
 	@Autowired
 	ContactService contactService;
 	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public ModelAndView login(HttpServletRequest request, HttpServletResponse response) {
 		
-		/*logger.info("Welcome home! The client locale is {}.", locale);		
-		
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
-		String formattedDate = dateFormat.format(date);		
-		model.addAttribute("serverTime", formattedDate );
-		model.addAttribute("contacts",contactService.getContact());*/
-		
-		 ModelAndView model = new ModelAndView("login");
-         LoginBean loginBean = new LoginBean();
-         model.addObject("loginBean", loginBean);	
-         
-		return model;
-	}
-	
-
-
-	
-	@RequestMapping(value="/login",method=RequestMethod.POST)
-	 public ModelAndView executeLogin(HttpServletRequest request, HttpServletResponse response, @ModelAttribute("loginBean")LoginBean loginBean)
-	    {
-
-	        ModelAndView model= null;
-	        try
-	        {
-	           // boolean isValidUser = loginDelegate.isValidUser(loginBean.getUsername(), loginBean.getPassword());
-	            if(true)
-	            {
-
-	                System.out.println("User Login Successful");
-	                request.setAttribute("loggedInUser", loginBean.getUsername());	
-	                System.out.println(loginBean.getUsername());
-	                model = new ModelAndView("/home");
-	            }	
-	            else
-	            {
-	                model = new ModelAndView("login");
-	                model.addObject("loginBean", loginBean);
-	                request.setAttribute("message", "Invalid credentials!!");
-	            } 
-
-	        }
-	        catch(Exception e)
-
-	        {
-	            e.printStackTrace();
-
-	        }
-	        return model;
-
-	    }
-
-	
-	
-	
 	
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
