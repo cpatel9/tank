@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.avaya.plds.bean.LoginBean;
-import com.avaya.plds.service.ContactService;
+
 import com.avaya.plds.service.LoginService;
 @Controller
 public class LoginController {
@@ -35,7 +35,7 @@ public class LoginController {
 
 	
 	@RequestMapping(value="/login",method=RequestMethod.POST)
-	 public ModelAndView executeLogin(HttpServletRequest request, HttpServletResponse response, @ModelAttribute("loginBean")LoginBean loginBean)
+	 public String executeLogin(HttpServletRequest request, HttpServletResponse response, @ModelAttribute("loginBean")LoginBean loginBean)
 	    {
 	        ModelAndView model= null;
 	        try
@@ -47,6 +47,7 @@ public class LoginController {
 	                request.setAttribute("loggedInUser", loginBean.getUsername());	
 	                System.out.println(loginBean.getUsername());
 	                model = new ModelAndView("/home");
+	                
 	            }	
 	            else
 	            {
@@ -59,7 +60,7 @@ public class LoginController {
 	        {
 	            e.printStackTrace();
 	        }
-	        return model;
+	        return "redirect:/home";
     }
 
 }
